@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let weakset = new WeakSet();
+        let obj = {
+            name:"bala",
+            age:21
+        }
+        weakset.add(obj);
+        let my=new Map([['a',1],['b',2]]);
+        let array=[1,2,3,4]
+        weakset.add(my);
+        weakset.add(array);
+        console.log(weakset);
+        console.log(weakset.has(array));
+    </script>
+</body>
+</html>
